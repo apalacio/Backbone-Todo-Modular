@@ -5,8 +5,10 @@ define([
   'collections/todos',
   'views/todo',
   'text!templates/stats.html'
-  ], function($, _, Backbone, Todos, TodoView, statsTemplate){
-  var AppView = Backbone.View.extend({
+  ], 
+  function($, _, Backbone, Todos, TodoView, statsTemplate){
+  
+	var AppView = Backbone.View.extend({
 
     // Instead of generating a new element, bind to the existing skeleton of
     // the App already present in the HTML.
